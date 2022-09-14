@@ -40,8 +40,8 @@ plot(u)
 plot(mesh)
 
 # Save solution to file in VTK format
-vtkfile = File('poisson/solution.pvd')
-vtkfile << u
+# vtkfile = File('poisson/solution.pvd')
+# vtkfile << u
 
 # Compute error in L2 norm
 error_L2 = errornorm(u_D, u, 'L2')
